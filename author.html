@@ -46,9 +46,37 @@ function checkAuthor() {
 
     }
 
-     resultElement.innerHTML = "Good: " + good + ", Oops: " + oops;
+     resultsElement.innerHTML = "Good: " + good + ", Oops: " + oops;
 
 }
+</script>
+
+<div>
+    <img src="newyork.jpg" alt="newyork" width="100" height="100" onclick="SelectImage()" id="img">
+
+</div>
+
+<script>
+    var useImage=1;
+    function SelectImage(){
+        switch(useImage){
+            case 1:
+                img.src = "dallas.jpg";
+                useImage++;
+                break; 
+            case 2:
+                img.src = "toronto.jpg";
+                useImage++;
+                break;   
+            default :
+                img.src="newyork.jpg";
+                useImage=1;
+                break;     
+                    
+        }
+             
+            
+    }
 </script>
 
 </body>

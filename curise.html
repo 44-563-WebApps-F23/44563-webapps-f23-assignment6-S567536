@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curise</title>
+    </head>
+ 
+<body>
+
+<h1>
+    Rishik Reddy Endurthy goes on curise
+</h1>
+
+<form>
+    <label for="Shares cabin"><input type ="checkbox" id="Share_Cabin" value="true"> Shares Cabin</label><br>
+
+    <label for="BreakFast"><input type ="checkbox" id="Break_Fast" value="True"> BreakFast </label> <br>
+      
+    <label for="Pool Passes"><input type ="checkbox" id="Pool_Passes" value="false"> Pool Passes </label> <br>
+    
+
+    <input type="button" onclick="selectCruise()" value="Select a curise">
+</form>
+<p>Results:</p>
+<div id="results">Share Cabin: True  , BreakFast: True  , PoolPasses: false </div>
+
+<form>
+    <label for="days">Enter the number of days</label>
+    <input type ="text" id="days" name="property" min=10 max=50 step=2 value=days> <br>
+
+    <label for="price">Enter the price</label>
+    <input type ="text" id="price" name="price" autofocus> <br>
+
+    <input type="button" onclick="updateCruise()" value="Update the cruise">
+</form>
+
+
+<div id="results2">Share Cabin: True  , BreakFast: True  , PoolPasses: false , Property: days , Price:00</div>
+
+
+<script> 
+
+var my_cruise;
+
+function selectCruise(){
+    console.log("Select a curise")
+    var sharesCabin = document.getElementById("Share_Cabin").checked
+    var breakFast = document.getElementById("Break_Fast").checked
+    var poolPasses = document.getElementById("Pool_Passes").checked
+    var resultsElement=document.getElementById("results")
+    var my_cruise= null;
+    my_cruise = "Share Cabin: "+sharesCabin+", BreakFast: "+breakFast+", Pool Passes: "+poolPasses;
+    
+    
+    resultsElement.innerHTML = my_cruise;
+
+        return my_cruise;
+}
+
+function updateCruise(){
+    console.log("Select a curise")
+//    var sharesCabin = document.getElementById("Share_Cabin").checked
+//    var breakFast = document.getElementById("Break_Fast").checked
+//    var poolPasses = document.getElementById("Pool_Passes").checked
+    var my_cruise= selectCruise();
+    var property = document.getElementById("days").value
+    var price = document.getElementById("price").value
+    var resultsElement=document.getElementById("results2")
+    my_cruise =my_cruise+", Property:  "+property+", Price: Rs "+price;
+    resultsElement.innerHTML = my_cruise;
+
+}
+
+</script>
+
+</body>
+</html> 
