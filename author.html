@@ -32,6 +32,11 @@ function checkAuthor() {
     var resultsElement = document.getElementById("results");
     var hiddenAuthor = hiddenAuthorInput.value;
     var guessedAuthor = guessAuthorInput.value;
+    if(oops >= 7){
+
+document.getElementById("button_check").onclick = ranOutOfGuess();
+
+  }
 
     if (hiddenAuthor === guessedAuthor) {
 
@@ -49,6 +54,12 @@ function checkAuthor() {
 
     resultsElement.innerHTML = "Good: " + good + ", Oops: " + oops;
       console.log.Results;
+}
+
+function ranOutOfGuess(){
+
+alert("Sorry, ran out of guesses.");
+
 }
 </script>
 
