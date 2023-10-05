@@ -3,7 +3,7 @@
 Introduction to Java Script and DOM
 Author:https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-S567536/author.html
 Tips:https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-S567536/tips.html
-Crusie:https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-S567536/crusie.html
+Crusie:https:https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-S567536/cruise.html
 
 
 
