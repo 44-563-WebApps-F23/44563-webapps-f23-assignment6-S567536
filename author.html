@@ -29,9 +29,10 @@ var oops = 0;
 function checkAuthor() {
     var hiddenAuthorInput = document.getElementById("hidden-author");
     var guessAuthorInput = document.getElementById("guess-the-author");
-    var resultElement = document.getElementById("results");
+    var resultsElement = document.getElementById("results");
     var hiddenAuthor = hiddenAuthorInput.value;
     var guessedAuthor = guessAuthorInput.value;
+
     if (hiddenAuthor === guessedAuthor) {
 
         good++;
@@ -46,8 +47,8 @@ function checkAuthor() {
 
     }
 
-     resultsElement.innerHTML = "Good: " + good + ", Oops: " + oops;
-
+    resultsElement.innerHTML = "Good: " + good + ", Oops: " + oops;
+      console.log.Results;
 }
 </script>
 
